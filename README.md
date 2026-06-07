@@ -17,8 +17,10 @@ The final output is a single-pane-of-glass Command Center built in Kibana, provi
 ## 🏗️ Phase 1: Infrastructure & Data Ingestion
 The ELK stack (Elasticsearch & Kibana) was containerized and deployed locally via Docker. A Python ingestion script was developed to securely pass raw JSON authentication logs (simulating SSH brute-force attempts) directly into the Elasticsearch backend.
 
-> *[Insert your Screenshot 44 here - The Docker Terminal]*
-> *[Insert your Screenshot 46 here - The Raw Kibana JSON Logs]*
+> <img width="1920" height="1080" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/ef447d93-b59b-4663-a0f7-3744034abbe7" />
+
+> <img width="1920" height="1080" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/320265e5-bb52-413e-aaf2-b7dfe45f500f" />
+
 
 ---
 
@@ -28,7 +30,8 @@ To move beyond static rules, an anomaly detection engine was engineered using Py
 2. **Analysis:** The `Isolation Forest` algorithm evaluates the Elasticsearch data against the normal baseline.
 3. **Verdict:** The mathematical model successfully flags the persistent Russian IP (`45.33.32.156`) as a `-1` (Severe Anomaly).
 
-> *[Insert your Screenshot 45 here - The Python Output]*
+> <img width="1920" height="1080" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/0ca41b5b-b91b-408c-a0bb-6a1d37d48a90" />
+
 
 ---
 
@@ -43,7 +46,8 @@ Raw JSON logs were parsed and mapped inside Kibana using the visual builder (Len
 * **Donut Charts:** Visualizing geographic and IP-based threat origins.
 * **Data Ledgers:** Providing a raw, timestamped ledger of targeted usernames and attack outcomes for SOC analysts.
 
-> *[Insert your Screenshot 47 here - The Final Dashboard]*
+> <img width="1920" height="1080" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/1a332a2c-667a-4bbb-ab72-34debf12e3d7" />
+
 
 ---
 *This lab was completed as a comprehensive academic capstone to bridge the gap between infrastructure deployment, AI-driven behavioral detection, and automated threat mitigation.*
